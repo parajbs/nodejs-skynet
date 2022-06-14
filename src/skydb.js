@@ -8,13 +8,12 @@ const {
   DEFAULT_SET_JSON_OPTIONS,
   DEFAULT_UPLOAD_OPTIONS,
   buildSkynetJsonObject,
-  getPublicKeyFromPrivateKey,
   RAW_SKYLINK_SIZE,
   decodeSkylinkBase64,
   formatSkylink,
   URI_SKYNET_PREFIX,
 } = require("./defaults");
-const { extractOptions, trimPrefix } = require("./utils");
+const { extractOptions, trimPrefix, getPublicKeyFromPrivateKey } = require("./utils");
 
 /**
  * Sets a JSON object at the registry entry corresponding to the privateKey and dataKey using SkyDB V1.
